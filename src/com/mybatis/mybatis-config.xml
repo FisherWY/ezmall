@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--方便以后整合其他插件时，比如通用Mapper分页插件二级缓存配置等 -->
+    <mappers>
+        <!-- 映射器，告诉 MyBatis到哪里去找映射文件-->
+        <mapper resource="com/mybatis/UserMapper.xml"/>
+    </mappers>
+</configuration>
