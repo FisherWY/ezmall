@@ -23,4 +23,16 @@ public class UserServiceImpl implements UserService {
     public List<User> selectUserByUsername(User user) {
         return userDao.selectUserByUsername(user);
     }
+
+    @Override
+    public List<User> verifyUser(User user) {
+        return userDao.verifyUser(user);
+    }
+
+    @Override
+    public boolean addUser(User user) {
+        return userDao.addUser(user);
+    }
+
+
 }

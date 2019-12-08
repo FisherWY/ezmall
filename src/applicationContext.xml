@@ -14,9 +14,9 @@
     <!-- 配置数据源 -->
     <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource">
         <property name="driverClassName" value="com.mysql.jdbc.Driver" />
-        <property name="url" value="jdbc:mysql://localhost:3306/easymall?characterEncoding=utf8" />
-        <property name="username" value="root" />
-        <property name="password" value="87654321" />
+        <property name="url" value="jdbc:mysql://fisher.lazybone.xyz:3306/easymall?characterEncoding=utf8" />
+        <property name="username" value="scnusoftware" />
+        <property name="password" value="SCNU@2019" />
         <!-- 最大连接数 -->
         <property name="maxTotal" value="30"/>
         <!-- 最大空闲连接数 -->

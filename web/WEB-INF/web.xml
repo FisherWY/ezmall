@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
-    <display-name>Ch191</display-name>
+    <display-name>EzMall</display-name>
     <welcome-file-list>
-        <welcome-file>index.html</welcome-file>
-        <welcome-file>index.htm</welcome-file>
-        <welcome-file>index.jsp</welcome-file>
-        <welcome-file>default.html</welcome-file>
-        <welcome-file>default.htm</welcome-file>
-        <welcome-file>default.jsp</welcome-file>
+        <welcome-file>jsp/index.html</welcome-file>
+        <welcome-file>jsp/index.htm</welcome-file>
+        <welcome-file>jsp/index.jsp</welcome-file>
+        <welcome-file>jsp/default.html</welcome-file>
+        <welcome-file>jsp/default.htm</welcome-file>
+        <welcome-file>jsp/default.jsp</welcome-file>
     </welcome-file-list>
     <!--实例化ApplicationContext容器，启动spring容器 -->
     <context-param>
@@ -26,11 +26,27 @@
     <servlet>
         <servlet-name>springmvc</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>WEB-INF/spingmvc-servlet.xml</param-value>
+        </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
         <servlet-name>springmvc</servlet-name>
         <url-pattern>/</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.css</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.jpg</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.png</url-pattern>
     </servlet-mapping>
 
     <!--定义过滤器主要解决POST乱码问题 -->

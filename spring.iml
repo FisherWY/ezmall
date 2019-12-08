@@ -18,18 +18,15 @@
       <configuration>
         <fileset id="fileset" name="Spingmvc Servlet" removed="false">
           <file>file://$MODULE_DIR$/web/WEB-INF/spingmvc-servlet.xml</file>
-          <file>file://$MODULE_DIR$/web/WEB-INF/applicationContext.xml</file>
+          <file>file://$MODULE_DIR$/web/WEB-INF/dispatcher-servlet.xml</file>
+          <file>file://$MODULE_DIR$/src/applicationContext.xml</file>
         </fileset>
-      </configuration>
-    </facet>
-    <facet type="web" name="Web2">
-      <configuration>
-        <descriptors>
-          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/resources/web.xml" />
-        </descriptors>
-        <webroots>
-          <root url="file://$MODULE_DIR$/resources" relative="/WEB-INF" />
-        </webroots>
+        <fileset id="web application context" name="MVC application context" removed="true">
+          <file>file://$MODULE_DIR$/src/applicationContext.xml</file>
+        </fileset>
+        <fileset id="web springmvc servlet context" name="MVC springmvc servlet context" removed="true">
+          <file>file://$MODULE_DIR$/web/WEB-INF/springmvc-servlet.xml</file>
+        </fileset>
       </configuration>
     </facet>
   </component>
@@ -38,11 +35,11 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/resources" type="java-resource" />
-      <excludeFolder url="file://$MODULE_DIR$/lib" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Spring-4.3.18.RELEASE" level="project" />
     <orderEntry type="library" name="Spring MVC-4.3.18.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Tomcat 8.5.45" level="application_server_libraries" />
   </component>
 </module>

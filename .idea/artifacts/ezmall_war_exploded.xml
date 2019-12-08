@@ -1,8 +1,7 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="spring:war exploded">
-    <output-path>$PROJECT_DIR$/out/artifacts/spring_war_exploded</output-path>
+  <artifact type="exploded-war" name="ezmall:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/ezmall</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="spring/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="spring" />
@@ -10,8 +9,11 @@
         <element id="directory" name="lib">
           <element id="library" level="project" name="Spring-4.3.18.RELEASE" />
           <element id="library" level="project" name="Spring MVC-4.3.18.RELEASE" />
+          <element id="dir-copy" path="$PROJECT_DIR$/lib" />
         </element>
+        <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/web.xml" />
       </element>
+      <element id="javaee-facet-resources" facet="spring/web/Web" />
     </root>
   </artifact>
 </component>

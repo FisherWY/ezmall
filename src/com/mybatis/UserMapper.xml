@@ -5,11 +5,15 @@
 <!-- com.dao.UserDao对应Dao接口 -->
 <mapper namespace="com.dao.UserDao">
     <!-- 查询用户信息 -->
-    <select id="selectUserByUsername"  resultType="com.po.User"
-            parameterType="com.po.User">
-        select * from user where 1=1
-        <if test="username!=null and username!=''">
-            and username like concat('%',#{username},'%')
-        </if>
+    <select id="selectUserByUsername" resultType="com.po.User" parameterType="com.po.User">
+        select * from user where username=#{username}
     </select>
+    <!-- 验证登录信息 -->
+    <select id="verifyUser" resultType="com.po.User" parameterType="com.po.User">
+        select * from user where username=#{username} and password=#{password}
+    </select>
+    <!-- 添加用户信息 -->
+    <insert id="addUser" parameterType="com.po.User" keyProperty="id" useGeneratedKeys="true">
+        insert into user(username, password, nickname, email) values (#{username}, #{password}, #{nickname}, #{email})
+    </insert>
 </mapper>

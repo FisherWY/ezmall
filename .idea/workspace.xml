@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="ezmall:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5f0b8c3-2932-457f-927f-5afeb65e8ba4" name="Default Changelist" comment="" />
+    <list default="true" id="d5f0b8c3-2932-457f-927f-5afeb65e8ba4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/jsp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/spring_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mybatis/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mybatis/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/po/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/po/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/spingmvc-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/spingmvc-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,21 +40,44 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
   <component name="ProjectId" id="1UUx2BwVAmapuFJjfPAn5Hxhb45" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/jsp" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/web/WEB-INF" />
+      <recent name="$PROJECT_DIR$/resources" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/WEB-INF" />
+      <recent name="$PROJECT_DIR$/web" />
+      <recent name="$PROJECT_DIR$/resources" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
@@ -47,6 +93,143 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.45" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_ezmall" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="60452" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ezmall" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.45" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="ezmall:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/ezmall" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_8_5_45_ezmall" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="60452" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="ezmall:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -59,10 +242,27 @@
       <updated>1575424766211</updated>
       <workItem from="1575424771930" duration="44000" />
       <workItem from="1575424837813" duration="1371000" />
+      <workItem from="1575594976261" duration="2915000" />
+      <workItem from="1575598380978" duration="1019000" />
+      <workItem from="1575600821997" duration="347000" />
+      <workItem from="1575706962302" duration="8960000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
