@@ -7,5 +7,7 @@
     <mappers>
         <!-- 映射器，告诉 MyBatis到哪里去找映射文件-->
         <mapper resource="com/mybatis/UserMapper.xml"/>
+        <mapper resource="com/mybatis/ProductMapper.xml"/>
+        <mapper resource="com/mybatis/OrderMapper.xml"/>
     </mappers>
 </configuration>

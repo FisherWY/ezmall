@@ -24,6 +24,21 @@ public class IndexController {
         return "regist";
     }
 
+    @RequestMapping("/cart")
+    public String cart() {
+        return "cart";
+    }
+
+    @RequestMapping("/orderadd")
+    public String orderadd() {
+        return "order_add";
+    }
+
+    @RequestMapping("/orderlist")
+    public String orderlist() {
+        return "order_list";
+    }
+
     @RequestMapping("/exit")
     public String exit(HttpSession session) {
         // 移除session并刷新主页

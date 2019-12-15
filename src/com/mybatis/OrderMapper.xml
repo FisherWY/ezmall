@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- com.dao.UserDao对应Dao接口 -->
+<mapper namespace="com.dao.OrderDao">
+    <insert id="addOrder" parameterType="com.po.Order">
+        insert into orders(id,money,receiverinfo,paystate,user_id,ordertime) values (#{id},#{money},#{receiverinfo},#{paystate},#{user_id},#{ordertime})
+    </insert>
+    <insert id="addOrderItem" parameterType="com.po.OrderItem">
+        insert into orderitem(order_id,product_id,buynum) values (#{order_id},#{product_id},#{buynum})
+    </insert>
+    <select id="findOrderByUserId" parameterType="java.lang.Integer" resultType="com.po.Order">
+        select * from orders where user_id=#{id}
+    </select>
+    <select id="findOrderItemByOrderId" parameterType="java.lang.String" resultType="com.po.OrderItem">
+        select * from orderitem where order_id=#{id}
+    </select>
+</mapper>

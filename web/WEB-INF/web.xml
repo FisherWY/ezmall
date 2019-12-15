@@ -48,6 +48,10 @@
         <servlet-name>default</servlet-name>
         <url-pattern>*.png</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>*.js</url-pattern>
+    </servlet-mapping>
 
     <!--定义过滤器主要解决POST乱码问题 -->
     <filter>
@@ -66,5 +70,9 @@
         <filter-name>characterEncodingFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
+    
+    <listener>
+        <listener-class>com.listener.cartSessionListener</listener-class>
+    </listener>
 
 </web-app>

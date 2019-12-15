@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- com.dao.ProductDao对应Dao接口 -->
+<mapper namespace="com.dao.ProductDao">
+    <!-- 查询商品信息 -->
+    <select id="selectProductByPid" resultType="com.po.Product" parameterType="java.lang.String">
+        select * from products where id=#{pid}
+    </select>
+    <!-- 更新商品信息 -->
+    <update id="updateProductNum" parameterType="com.po.Product">
+        update products set pnum=#{pnum}
+    </update>
+    <!-- 获取所有商品 -->
+    <select id="getAllProduct" resultType="com.po.Product">
+        select * from products
+    </select>
+    <!-- 搜索商品 -->
+    <select id="searchProduct" resultType="com.po.Product" parameterType="com.po.Product">
+        select * from products where name like #{name} and category like #{category}
+    </select>
+</mapper>
