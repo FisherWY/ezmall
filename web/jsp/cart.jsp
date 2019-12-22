@@ -40,7 +40,7 @@
 						<a href="javascript:void(0)" class="addNum" >+</a>
 					</li>
 					<li class="sum_price">${entry.key.price * entry.value}</li>
-					<li><a id="" class="delProd" href="javascript:void(0)">删除</a></li>
+					<li><a id="${entry.key.id}" class="delProd" href="javascript:void(0)">删除</a></li>
 				</ul>
 				<c:set var="totalMoney" value="${totalMoney + entry.key.price * entry.value}"></c:set>
 			</c:forEach>
@@ -100,7 +100,7 @@
 				var buyNum = parseInt(buyNumInput.val()) + 1;
 				buyNumInput.val(buyNum);
 				var pid = buyNumInput.attr("id");
-				$.post("${pageContext.request.contextPath}/updateBuyNum", {
+				$.post("${pageContext.request.contextPath}/cart/updateBuyNum", {
 					"pid": pid,
 					"buyNum": buyNum
 				})
@@ -111,7 +111,7 @@
 			$(".delProd").click(function () {
 				var pid = $(this).attr("id");
 
-				$.post("${pageContext.request.contextPath}/updateBuyNum", {
+				$.post("${pageContext.request.contextPath}/cart/updateBuyNum", {
 					"pid": pid,
 					"buyNum": -1
 				})

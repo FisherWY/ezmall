@@ -8,10 +8,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d5f0b8c3-2932-457f-927f-5afeb65e8ba4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/mybatis/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mybatis/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/jsp/_head.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/_head.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/controller/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/controller/CartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/jsp/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/jsp/cart.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +31,7 @@
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
-    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_WARNINGS" value="true" />
     <option name="FILTER_INFO" value="true" />
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
@@ -242,6 +240,8 @@
       <workItem from="1576197816053" duration="10428000" />
       <workItem from="1576242659349" duration="2461000" />
       <workItem from="1576290557534" duration="5796000" />
+      <workItem from="1576807471292" duration="526000" />
+      <workItem from="1577021433112" duration="2825000" />
     </task>
     <servers />
   </component>

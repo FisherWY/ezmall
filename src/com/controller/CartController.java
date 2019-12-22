@@ -2,6 +2,7 @@ package com.controller;
 
 import com.po.Product;
 import com.service.CartService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -19,6 +20,7 @@ import java.util.Map;
 
 @Controller
 @RequestMapping("/cart")
+@Slf4j
 public class CartController {
 
     @Autowired
@@ -39,7 +41,7 @@ public class CartController {
         } else {
             cartMap.put(product, buyNum);
         }
-        return "cart";
+        return "redirect:/index/cart";
     }
 
     @RequestMapping("/updateBuyNum")
@@ -53,7 +55,5 @@ public class CartController {
         } else {
             cartMap.put(product, buyNum);
         }
-        httpSession.removeAttribute("cartmap");
-        httpSession.setAttribute("cartmap", cartMap);
     }
 }
