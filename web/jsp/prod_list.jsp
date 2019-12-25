@@ -12,7 +12,7 @@
 	<%@ include file="_head.jsp" %>
 	<div id="content">
 		<div id="search_div">
-			<form method="post" action="#">
+			<form method="post" action="${pageContext.request.contextPath}/product/searchProd">
 				<span class="input_span">商品名：<input type="text" name="name"/></span>
 				<span class="input_span">商品种类：<input type="text" name="category"/></span>
 				<span class="input_span">商品价格区间：<input type="text" name="minprice"/> - <input type="text" name="maxprice"/></span>

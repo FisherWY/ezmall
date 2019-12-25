@@ -5,6 +5,7 @@ import com.po.Product;
 import com.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.ServletException;
@@ -48,13 +49,45 @@ public class ProductController {
     }
 
     @RequestMapping("/searchProd")
-    public void searchProd(HttpServletRequest request) {
-        String name = request.getParameter("name");
-        String category = request.getParameter("category");
+    public String searchProd(HttpServletRequest request, HttpSession httpSession) {
         Product product = new Product();
-        product.setName(name);
-        product.setCategory(category);
+        if (!StringUtils.isEmpty(request.getParameter("name"))) {
+            product.setName(request.getParameter("name"));
+        } else {
+            product.setName("");
+        }
+        if (!StringUtils.isEmpty(request.getParameter("category"))) {
+            product.setCategory(request.getParameter("category"));
+        } else {
+            product.setCategory("");
+        }
+        if (!StringUtils.isEmpty(request.getParameter("minprice"))) {
+            Double minprice = Double.parseDouble(request.getParameter("minprice"));
+            product.setPrice(minprice);
+        } else {
+            product.setPrice(Double.MIN_VALUE);
+        }
+        if (!StringUtils.isEmpty(request.getParameter("maxprice"))) {
+            Double maxprice = Double.parseDouble(request.getParameter("maxprice"));
+            product.setPrice1(maxprice);
+        } else {
+            product.setPrice1(Double.MAX_VALUE);
+        }
         List<Product> list = productService.searchProduct(product);
-        request.setAttribute("productList", list);
+        httpSession.setAttribute("productList", list);
+        return "prod_list";
+    }
+
+    @RequestMapping("/searchProdByName")
+    public String searchProdByName(HttpServletRequest request, HttpSession httpSession) {
+        Product product = new Product();
+        if (!StringUtils.isEmpty(request.getParameter("name"))) {
+            product.setName(request.getParameter("name"));
+        } else {
+            product.setName("");
+        }
+        List<Product> list = productService.searchProduct(product);
+        httpSession.setAttribute("productList", list);
+        return "prod_list";
     }
 }

@@ -18,6 +18,15 @@
     </select>
     <!-- 搜索商品 -->
     <select id="searchProduct" resultType="com.po.Product" parameterType="com.po.Product">
-        select * from products where name like #{name} and category like #{category}
+        select * from products where name like concat('%',#{name},'%')
+        <if test="category!=null and category!=''">
+            and category like concat('%',#{category},'%')
+        </if>
+        <if test="price!=null and price!='' and price1!=null and price1!=''">
+            and price between #{price} and #{price1}
+        </if>
+    </select>
+    <select id="searchProductByName" resultType="com.po.Product" parameterType="com.po.Product">
+        select * from products where name like #{name}
     </select>
 </mapper>
